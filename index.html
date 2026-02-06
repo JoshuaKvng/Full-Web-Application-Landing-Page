@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Bites - We Serve The Taste You Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="brand-logo header-logo">
+            <img src="logo.png" alt="Bites Logo" class="logo" >
+            <span class="logo-text">Bites</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="btn-primary reserve-btn" >
+                <a href="javascript:void(0)" class="reserve-btn">Reserve Table</a>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>We Serve The <span class="highlight">Taste</span> You Love 😍</h1>
+                <p>This is a type of restaurant which typically serves food and drinks, in addition to light refreshments.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary" href="#menu">Explore Food</button>
+                    <button class="btn-secondary">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="circle-bg">
+                    <div class="circle-bg1"></div>
+                    <div class="circle-bg2"></div>
+                    <div class="circle-bg3"></div>
+                </div>
+                <img src="circle-bg.png" alt="Delicious Salad" class="hero-img">
+            </div>
+
+            <div class="category-sidebar">
+                <div class="category-item active">
+                    <img src="dish-icon.png" alt=""> <span>Dishes</span>
+                </div>
+                <div class="category-item">
+                    <img src="dessert-icon.png" alt=""> <span>Dessert</span>
+                </div>
+                <div class="category-item">
+                    <img src="drinks-icon.png" alt=""> <span>Drinks</span>
+                </div>
+                <div class="category-item">
+                    <img src="platter-icon.png" alt=""> <span>Platter</span>
+                </div>
+                <div class="category-item">
+                    <img src="snacks-icon.png" alt=""> <span>Snacks</span>
+                </div>
+            </div>
+
+            <div class="dots-pattern dots-right"></div>
+        </section>
+
+        <section class="popular-dishes">
+            <div class="section-header">
+                <h2 class="dishes-heading">Popular Dishes</h2>
+                <div class="carousel-nav">
+                    <button id="prevBtn" class="nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="nextBtn" class="nav-next active"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div id="dishCarousel" class="dishes-container">
+                <div class="dish-card">
+                    <img src="pasta.png" alt="Pasta">
+                    <h3>Pasta</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Pasta is a type of food typically made from an unleavened dough.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="Chicken_Shawarma.png" alt="Chicken Shawarma">
+                    <h3>Chicken Shawarma</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>Roasted, sliced chicken served with Middle Eastern spices and a warm pita.</p>
+                    <div class="card-footer">
+                        <span class="price">$45.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="French Fries.png" alt="French Fries">
+                    <h3>French Fries</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Crispy, golden deep-fried potato batons, lightly salted and served hot.</p>
+                    <div class="card-footer">
+                        <span class="price">$30.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="Fish Curry.png" alt="Fish Curry">
+                    <h3>Fish Curry</h3>
+                    <div class="rating">⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dots-pattern dots-left"></div>
+
+        </section>
+        <section class="about-us" id="aboutUs">
+            <div class="about-container">
+                <div class="about-image-wrapper">
+                    <div class="collage-circle">
+                        <div class="slices-grid">
+                            <div class="slice s1"></div>
+                            <div class="slice s2"></div>
+                            <div class="slice s3"></div>
+                            <div class="slice s4"></div>
+                            <div class="slice s5"></div>
+                            <div class="slice s6"></div>
+                        </div>
+                        <img src="chef.png" class="chef-img" alt="Professional Chef">
+                    </div>
+
+                    <img src="lettuce.png" class="float-veg top-right" alt="lettuce">
+                    <img src="pepper.png" class="float-veg bottom-left" alt="">
+                </div>
+
+                <div class="about-content">
+                    <h3>We Are More Than Multiple Service</h3>
+                    <p>This is a type of restaurant which typically serves food and drinks, in addition to light refreshments such as baked goods or snacks.</p>
+                    
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <img src="oooo.png" alt="">
+                            <span>Online Order</span>
+                        </div>
+                        <div class="service-item">
+                            <img src="pre-reservation.png" alt="">
+                            <span>Pre-Reservation</span>
+                        </div>
+                        <div class="service-item">
+                            <img src="247 service.png" alt="">
+                            <span>24/7 Service</span>
+                        </div>
+                        <div class="service-item">
+                            <img src="organized-icon.png" alt="">
+                            <span>Organized Foodie Place</span>
+                        </div>
+                        <div class="service-item">
+                            <img src="clean-kitchen-icon.png" alt="">
+                            <span>Clean Kitchen</span>
+                        </div>
+                        <div class="service-item">
+                            <img src="chef-icon.png" alt="">
+                            <span>Super Chefs</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary">About Us</button>
+                </div>
+            </div>
+            <div class="dots-pattern dots-right"></div>
+        </section>
+
+        <section class="menu" id="menu" >
+            <h2 class="menu-header">Our Regular Menu Pack</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-target="all">All</button>
+                <button class="filter-btn" data-target="special">Special Foods</button>
+                <button class="filter-btn" data-target="mexican">Mexican</button>
+                <button class="filter-btn" data-target="italian">Italian</button>
+                <button class="filter-btn" data-target="japanese">Japanese</button>
+                <button class="filter-btn" data-target="drinks">Drinks</button>
+                <button class="filter-btn" data-target="desserts">Desserts</button>
+                <button class="filter-btn" data-target="lunch">Lunch</button>
+            </div>
+            <div class="menu-grid">
+                <div class="dish-card" data-category="italian">
+                    <img src="pasta.png" alt="Pasta">
+                    <h3>Pasta</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Roasted, sliced chicken served with Middle Eastern spices and a warm pita.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-category="lunch">
+                    <img src="french fries.png" alt="French Fries">
+                    <h3>French Fries</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Crispy, golden deep-fried potato batons, lightly salted and served hot.</p>
+                    <div class="card-footer">
+                        <span class="price">$55.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-category="special">
+                    <img src="chicken_shawarma.png" alt="Chicken Shawarma">
+                    <h3>Chicken Shawarma</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Roasted, sliced chicken served with Middle Eastern spices and a warm pita.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-category="lunch">
+                    <img src="fish curry.png" alt="Fish Curry">
+                    <h3>Fish Curry</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="special">
+                    <img src="Burger.png" alt="Burger">
+                    <h3>Burger</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="desserts">
+                    <img src="dessert-icon.png" alt="Red Velvet Strawberry Cheesecake">
+                    <h3>Cheesecake</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$38.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="special">
+                    <img src="platter-icon.png" alt="platter">
+                    <h3>Food Platter</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="japanese">
+                    <img src="bao-buns.png" alt="Fish Curry">
+                    <h3>Bao Buns</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="italian">
+                    <img src="lasagna.png" alt="Lasagna">
+                    <h3>Lasagna</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="mexican">
+                    <img src="guacamole.png" alt="Guacamole">
+                    <h3>Guacamole</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="mexican">
+                    <img src="tacos.png" alt="Tacos">
+                    <h3>Tacos</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="mexican">
+                    <img src="Quesadilla.png" alt="Quesadilla">
+                    <h3>Quesadilla</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="mexican">
+                    <img src="Chipotle Chicken Taquitos.png" alt="Chipotle Chicken Taquitos">
+                    <h3>Chipotle Chicken Taquitos</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="italian">
+                    <img src="Ravioli.png" alt="Ravioli">
+                    <h3>Ravioli</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="italian">
+                    <img src="ratatouille.png" alt="ratatouille">
+                    <h3>Ratatouille</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="japanese">
+                    <img src="katsu-bowls.png" alt="Katsu Bowls">
+                    <h3>Katsu Bowls</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="japanese">
+                    <img src="ramen.png" alt="ramen">
+                    <h3>Ramen</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="japanese">
+                    <img src="dorayaki.png" alt="Dorayaki">
+                    <h3>Dorayaki</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="drinks">
+                    <img src="drinks-icon.png" alt="">
+                    <h3>Latte</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="drinks">
+                    <img src="drink.png" alt="">
+                    <h3>Strawberry Banana Smoothie</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="drinks">
+                    <img src="oreo-milkshake.png" alt="Oreo Milkshake">
+                    <h3>Oreo Milkshake</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="drinks">
+                    <img src="cocktails.png" alt="Cocktails">
+                    <h3>Cocktails</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="desserts">
+                    <img src="clc.png" alt="Chocolate Laced Crepes">
+                    <h3>Chocolate Laced Crepes</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="desserts">
+                    <img src="Crème-Brûlée.png" alt="Mini Crème Brûlée">
+                    <h3>Mini Crème Brûlée</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="desserts">
+                    <img src="croissants.png" alt="Croissants">
+                    <h3>Chocolate Filled Croissants</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="special">
+                    <img src="gcs.png" alt="sandwich">
+                    <h3>Gourmet Ciabatta Sandwich</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="special">
+                    <img src="pcs.png" alt="Philly Cheesesteak">
+                    <h3>Philly Cheesesteak</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="special">
+                    <img src="chicken-skewers.png" alt="Chicken Skewers">
+                    <h3>Chicken Skewers</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="special">
+                    <img src="fish-sticks.png" alt="Crispy Fish Sticks">
+                    <h3>Crispy Fish Sticks</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="lunch">
+                    <img src="corndogs.png" alt="corndogs">
+                    <h3>Corndogs</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="lunch">
+                    <img src="snacks-icon.png" alt="Chocolate Bowl">
+                    <h3>Chocolate Bowl</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-category="special">
+                    <img src="arancini.png" alt="Arancini Balls">
+                    <h3>Arancini Balls</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Grilled sausages topped with caramelized onions in a soft, toasted bun.</p>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reservation-banner">
+            <div class="dots-pattern dots-top-left"></div>
+
+            <div class="reservation-container">
+                <div class="reservation-text">
+                    <h2>Do You Have Any Dinner Plan Today? Reserve Your Table</h2>
+                    <p>Make online reservations, read restaurant reviews from diners, and earn points towards free meals.</p>
+                    <button class="btn-primary make-reservation-btn">
+                        <a href="javascript:void(0)" class="make-reservation-btn" >Make Reservation</a>
+                    </button>
+                </div>
+
+                <div class="reservation-image-area">
+                    <div class="exploded-circle">
+                        <div class="segment seg-1"></div>
+                        <div class="segment seg-2"></div>
+                        <div class="segment seg-3"></div>
+                        <div class="segment seg-4"></div>
+                        <div class="segment seg-5"></div>
+                        <div class="segment seg-6"></div>
+                    </div>
+                    
+                    <img src="food-bowl.png" class="bowl-img" alt="Dinner Bowl">
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="section-header">
+                <h2>What Our Customer Says?</h2>
+                <div class="carousel-nav">
+                    <button id="reviewPrev" class="nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="reviewNext" class="nav-next active"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div id="reviewCarousel" class="reviews-container">
+                <div class="review-card">
+                    <p>"This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they're doing and what they're talking about, and you can tell making the customers happy is their main priority."</p>
+                    <div class="customer-info">
+                        <img src="customer1.png" alt="Savannah Nguyen">
+                        <div class="customer-details">
+                            <h4>Savannah Nguyen</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>"This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they're doing and what they're talking about, and you can tell making the customers happy is their main priority."</p>
+                    <div class="customer-info">
+                        <img src="customer1.png" alt="Savannah Nguyen">
+                        <div class="customer-details">
+                            <h4>Savannah Nguyen</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>"This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they're doing and what they're talking about, and you can tell making the customers happy is their main priority."</p>
+                    <div class="customer-info">
+                        <img src="customer1.png" alt="Savannah Nguyen">
+                        <div class="customer-details">
+                            <h4>Savannah Nguyen</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>"This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they're doing and what they're talking about, and you can tell making the customers happy is their main priority."</p>
+                    <div class="customer-info">
+                        <img src="customer1.png" alt="Savannah Nguyen">
+                        <div class="customer-details">
+                            <h4>Savannah Nguyen</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chefs">
+            <div class="section-header">
+                <h2>Meet Our Chefs</h2>
+                <div class="carousel-nav">
+                    <button id="chefPrev" class="nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="chefNext" class="nav-next active"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div id="chefCarousel" class="chefs-container">
+                <div class="chef-card">
+                    <div class="chef-image-bg">
+                        <img src="chef1.png" alt="Savannah Nguyen">
+                    </div>
+                    <h4>Savannah Nguyen</h4>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image-bg">
+                        <img src="chef2.png" alt="Esther Howard">
+                    </div>
+                    <h4>Esther Howard</h4>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image-bg">
+                        <img src="chef1.png" alt="Savannah Nguyen">
+                    </div>
+                    <h4>Savannah Nguyen</h4>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image-bg">
+                        <img src="chef2.png" alt="Esther Howard">
+                    </div>
+                    <h4>Esther Howard</h4>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image-bg">
+                        <img src="chef1.png" alt="Savannah Nguyen">
+                    </div>
+                    <h4>Savannah Nguyen</h4>
+                </div>
+                <div class="chef-card">
+                    <div class="chef-image-bg">
+                        <img src="chef2.png" alt="Esther Howard">
+                    </div>
+                    <h4>Esther Howard</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-download" id="blog">
+            <div class="app-container">
+                <div class="app-text">
+                    <h3>Never Feel Hungry!</h3>
+                    <h2>Download Our Mobile App Enjoy Delicious Foods</h2>
+                    <p>Make online reservations, read restaurant reviews from diners, and earn points towards free meals. OpenTable is a real-time online reservation.</p>
+                    
+                    <div class="store-buttons">
+                        <button class="btn-primary store-btn apple-btn">
+                            <img src="apple-store1.png" alt="Download on the App Store">
+                            <p class="store-text">Download on <br />the App Store</p>
+                        </button>
+                        <button class="btn-secondary store-btn google-btn" >
+                            <img src="google-store.png" alt="Get it on Google Play">
+                            <p class="store-text">Get it on <br />Google Play</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="app-images">
+                    <img src="mobile-mockup.png" class="main-phone" alt="Bites App Interface">
+                    <img src="floating-food.png" class="floating-dish" alt="Floating Salad">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="brand-logo footer-logo">
+            <img src="logo.png" alt="Bites Logo" class="logo" >
+            <span  class="logo-text">Bites</span>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column brand-col">
+                
+                
+                <div class="newsletter">
+                    <h4>Subscribe Our Newsletter</h4>
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter Your Email">
+                        <button class="send-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Service</h4>
+                <ul>
+                    <li><a href="#">Online Order</a></li>
+                    <li><a href="#">Pre-Reservation</a></li>
+                    <li><a href="#">24/7 Services</a></li>
+                    <li><a href="#">Foodie Place</a></li>
+                    <li><a href="#">Super Chefs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Reserve Table</a></li>
+                    <li><a href="#">Order Foods</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Our Chefs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="reservationModal" class="modal">
+    <div class="modal-content reservation-form-container">
+        <span class="close-btn">&times;</span>
+        <section class="reservation-hero">
+            <h1>Book Your Experience</h1>
+            <p>Make online reservations, read restaurant reviews from diners, and earn points towards free meals.</p>
+        </section>
+        <form id="popupReservationForm">
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Full Name" required>
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+234..." required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="input-group">
+                    <label>Time</label>
+                    <input type="time" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Guests</label>
+                    <select required>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4+">4 or more</option>
+                    </select>
+                </div>
+                <div class="input-group" >
+                    <label>Table for</label>
+                    <select>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4+">4 People</option>
+                        <option value="4+">6 or more</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Special Requests</label>
+                <textarea rows="4" placeholder="Any allergies or special occasions?"></textarea>
+            </div>
+
+            <button type="submit" class="reserve-btn-main">Confirm Reservation</button>
+        </form>
+    </div>
+    <script>
+        const carousel = document.getElementById('dishCarousel');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+
+        // How much to scroll (usually the width of one card + gap)
+        const scrollAmount = 350; 
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const dishCards = document.querySelectorAll('.menu-grid .dish-card');
+
+            // Function to filter dishes
+            const filterMenu = (target) => {
+                dishCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (target === 'all' || category === target) {
+                        card.style.display = 'flex'; // Show matching
+                    } else {
+                        card.style.display = 'none'; // Hide others
+                    }
+                });
+            };
+
+            // Initialize with 'special' as default
+            filterMenu('special');
+
+            // Click Event Listener
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button styling
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Run the filter
+                    const target = button.getAttribute('data-target');
+                    filterMenu(target);
+                });
+            });
+        });
+
+        const reviewCarousel = document.getElementById('reviewCarousel');
+        const reviewNext = document.getElementById('reviewNext');
+        const reviewPrev = document.getElementById('reviewPrev');
+
+        // Scroll by the width of one card + the gap
+        const reviewScrollAmount = 380; 
+
+        reviewNext.addEventListener('click', () => {
+            reviewCarousel.scrollBy({
+                left: reviewScrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        reviewPrev.addEventListener('click', () => {
+            reviewCarousel.scrollBy({
+                left: -reviewScrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        const chefCarousel = document.getElementById('chefCarousel');
+        const chefNext = document.getElementById('chefNext');
+        const chefPrev = document.getElementById('chefPrev');
+
+        const chefScrollAmount = 280; // Card width (250) + gap (30)
+
+        chefNext.addEventListener('click', () => {
+            chefCarousel.scrollBy({
+                left: chefScrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        chefPrev.addEventListener('click', () => {
+            chefCarousel.scrollBy({
+                left: -chefScrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("reservationModal");
+            const openBtns = document.querySelectorAll(".reserve-btn, .make-reservation-btn");
+            const closeBtn = document.querySelector(".close-btn");
+
+            openBtns.forEach(btn => {
+                btn.onclick = (e) => {
+                    e.preventDefault();
+                    modal.style.display = "block";
+                    document.body.style.overflow = "hidden"; // Freeze background
+                };
+            });
+
+            closeBtn.onclick = () => {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            };
+
+            window.onclick = (event) => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            };
+
+            const reservationForm = document.getElementById("popupReservationForm");
+
+            if (reservationForm) {
+                reservationForm.addEventListener("submit", (e) => {
+                    e.preventDefault(); // Prevents the page from reloading
+
+                    // 1. Show a loading state on the button
+                    const submitBtn = reservationForm.querySelector(".reserve-btn-main");
+                    const originalText = submitBtn.innerText;
+                    submitBtn.innerText = "Processing...";
+                    submitBtn.disabled = true;
+
+                    // 2. Simulate a backend delay (e.g., sending to a database)
+                    setTimeout(() => {
+                        // 3. Replace the form with a Success Message
+                        const modalContent = document.querySelector(".modal-content");
+                        modalContent.innerHTML = `
+                            <span class="close-btn">&times;</span>
+                            <div class="success-message" style="text-align: center; padding: 40px 0;">
+                                <i class="fas fa-check-circle" style="font-size: 50px; color: #f9b233; margin-bottom: 20px;"></i>
+                                <h2>Reservation Confirmed!</h2>
+                                <p>Thank you for choosing Bites. We've sent a confirmation to your phone.</p>
+                                <button onclick="location.reload()" class="reserve-btn-main" style="margin-top: 20px;">Done</button>
+                            </div>
+                        `;
+                        
+                        // Re-link the new close button
+                        const newCloseBtn = modalContent.querySelector(".close-btn");
+                        newCloseBtn.onclick = () => {
+                            document.getElementById("reservationModal").style.display = "none";
+                            document.body.style.overflow = "auto";
+                        };
+                    }, 2000); // 1.5 second delay for realism
+                })
+            }
+        });
+
+        
+    </script>
+</body>
+</html>

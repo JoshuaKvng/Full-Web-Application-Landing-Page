@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bites - Reserve Your Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sub-page">
+
+    <header class="navbar">
+        <div class="brand-logo reservation-logo">
+            <img src="logo.png" alt="Bites" class="logo">
+            <span class="logo-text">Bites</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reservation-content">
+        <section class="reservation-hero">
+            <h1>Book Your Experience</h1>
+            <p>Make online reservations, read restaurant reviews from diners, and earn points towards free meals.</p>
+        </section>
+
+        <section class="reservation-form-container">
+            <form id="reservationForm">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+234..." required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Time</label>
+                        <input type="time" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Guests</label>
+                        <select required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4+">4 or more</option>
+                        </select>
+                    </div>
+                    <div class="input-group" >
+                        <label>Table for</label>
+                        <select>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4+">4 People</option>
+                            <option value="4+">6 or more</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Special Requests</label>
+                    <textarea rows="4" placeholder="Any allergies or special occasions?"></textarea>
+                </div>
+
+                <button type="submit" class="reserve-btn-main">Confirm Reservation</button>
+            </form>
+        </section>
+    </main>
+
+    </body>
+</html>
