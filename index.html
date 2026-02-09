@@ -3,11 +3,11 @@
     <head>
         <meta property="og:type" content="profile">
         <meta property="og:title" content="Bites - We Serve The Taste You Love">
-        <meta property="og:description" content="Explore the work and projects of Joshua Adejola, specializing in Responsive Web Design.">
+        <meta property="og:description" content="Experience delicious dining with Bites. Browse our regular menu, make online reservations, and discover the taste you love.">
         <meta property="og:image" content="https://joshuakvng.github.io/Full-Web-Application-Landing-Page/logo - Copy.png">
         
         <meta property="og:title" content="Bites - We Serve The Taste You Love" />
-        <meta property="og:description" content="Creative Developer specializing in Responsive Web Design. Check out my latest projects." />
+        <meta property="og:description" content="Experience delicious dining with Bites. Browse our regular menu, make online reservations, and discover the taste you love." />
         <meta property="og:url" content="https://joshuakvng.github.io/portfolio.xi/" />
         <meta property="og:image" content="https://joshuakvng.github.io/Full-Web-Application-Landing-Page/logo - Copy.png" />
         <meta property="og:type" content="website" />
@@ -16,7 +16,7 @@
         <meta name="twitter:title" content="Bites - We Serve The Taste You Love">
         <meta name="twitter:description" content="Experience delicious dining with Bites. Browse our regular menu, make online reservations, and discover the taste you love.">
         <meta name="twitter:image" content="https://joshuakvng.github.io/Full-Web-Application-Landing-Page/logo - Copy.png">
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="apple-touch-icon" sizes="180x180" href="https://joshuakvng.github.io/Full-Web-Application-Landing-Page/apple-touch-icon.png">
@@ -28,7 +28,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
-    <body>
+    <body class="index">
         <header class="navbar">
             <div class="brand-logo header-logo">
                 <img src="logo.png" alt="Bites Logo" class="logo" >
@@ -52,6 +52,9 @@
                 <button class="btn-primary reserve-btn" >
                     <a href="javascript:void(0)" class="reserve-btn">Reserve Table</a>
                 </button>
+            </div>
+            <div class="mobile-nav-toggle" id="mobileMenuBtn">
+                <span class="food-icon">🍰</span>
             </div>
         </header>
 
@@ -699,7 +702,9 @@
                     </div>
 
                     <div class="app-images">
-                        <img src="mobile-mockup.png" class="main-phone" alt="Bites App Interface">
+                        <div class="home-page" >
+                            <img src="mobile-mockup.png" class="main-phone" alt="Bites App Interface">
+                        </div>
                         <img src="floating-food.png" class="floating-dish" alt="Floating Salad">
                     </div>
                 </div>
@@ -833,9 +838,7 @@
                 </form>
             </div>
         </div>
-        <script src="script.js">
-                    
-        </script>
+        <div id="menuOverlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3); display:none; z-index:998;"></div>
+        <script src="script.js"> </script>
     </body>
-
 </html>
